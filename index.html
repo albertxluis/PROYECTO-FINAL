@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/d8d921f3e2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Registro</title>
+</head>
+<body>
+   
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <form action="#">
+                    <h2>Iniciar Sesión</h2>
+
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" required>
+                        <label for="usuario">usuario</label>
+                    </div>
+
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" required>
+                        <label for="password">contraseña</label>
+                    </div>
+
+                    <div class="olvidar">
+                        <label for="#">
+                            <input type="checkbox">Recordar Usuario
+                            <a href="#">olvide la contraseña</a>
+                        </label>
+                    </div>
+            </form>
+            
+            <div>
+                <button class="input-contenedor"
+                 type="button" onclick="validarUsuario">Acceder
+                </button>
+                <div class="registrar">
+                    <p>No tengo cuenta<a href="#"> Crear una cuenta</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <script>
+  
+        function validarUsuario(){
+         
+         let usuario = document.getElementById('usuario').value;
+         let pass = document.getElementById("password").value;
+         
+         if (usuario == "Luis" && pass == 1234) {
+          window.location.href = '.Catalogo/catalogo.html'
+         }
+        }
+        
+       </script>
+
+    
+</body>
+</html>
